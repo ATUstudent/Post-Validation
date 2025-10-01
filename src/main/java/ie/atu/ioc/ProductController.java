@@ -16,6 +16,7 @@ public class ProductController {
     public String hello(){
         return "hello";
     }
+
     @GetMapping("/getproducts")
     public List<Product> getProduct()
     {
@@ -26,6 +27,12 @@ public class ProductController {
     public Product addProduct(@Valid @RequestBody Product myProduct)
     {
         myList.add(myProduct);
+
+    @GetMapping("/getproduct")
+    public Product getProduct()
+    {
+        Product myProduct = new Product("Tv",499);
+
         return myProduct;
     }
 }
