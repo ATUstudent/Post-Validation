@@ -19,7 +19,7 @@ public class ProductController {
     @GetMapping("/getproducts")
     public List<Product> getProduct()
     {
-        Product myProduct = new Product("Tv",499);
+        Product myProduct = new Product("Tv",498);
         return myList;
     }
     @PostMapping("/addProduct")
